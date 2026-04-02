@@ -1,0 +1,19 @@
+# Compiled output
+target/
+
+# Eclipse IDE files
+.classpath
+.project
+.settings/
+
+# Sensitive config - never commit this!
+src/main/resources/db.properties
+
+# Test/scratch files
+src/main/java/com/scms/main/TestConnection.java
+src/main/java/com/scms/main/TestBatchInsert.java
+src/main/java/com/scms/main/TestCourseDAO.java
+src/main/java/com/scms/main/TestDBMetadata.java
+src/main/java/com/scms/main/TestEnrollmentDAO.java
+src/main/java/com/scms/main/TestResultSetMetadata.java
+src/main/java/com/scms/main/TestStudentDAO.java
