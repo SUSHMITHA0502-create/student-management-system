@@ -15,7 +15,7 @@ public class StudentDAO {
 
     
     public void addStudent(Student student) throws Exception {
-        String sql = "CALL add_student_sp(?,?,?)6";
+        String sql = "CALL add_student_sp(?,?,?)";
         try (Connection con = DBConnection.getConnection();
              PreparedStatement ps = con.prepareStatement(sql)) {
 
