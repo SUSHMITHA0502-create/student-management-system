@@ -71,36 +71,166 @@ This project demonstrates backend database integration, DAO architecture, connec
 
 ---
 
-## 📂 Project Structure
+# Student Management System
 
-student-management-system/
-│
-├── src/main/java/com/scms/
-│   ├── db/
-│   │   ├── ConnectionPool.java       # Manages a pool of DB connections
-│   │   └── DBConnection.java         # Wrapper to get/release connections
-│   │
-│   ├── dao/
-│   │   ├── StudentDAO.java           # CRUD operations for Student
-│   │   ├── CourseDAO.java            # CRUD operations for Course
-│   │   └── EnrollmentDAO.java        # CRUD operations for Enrollment
-│   │
-│   ├── model/
-│   │   ├── Student.java              # Student entity class
-│   │   ├── Course.java               # Course entity class
-│   │   └── Enrollment.java           # Enrollment entity class
-│   │
-│   └── main/
-│       └── MainApp.java              # Main entry point of the application
-│
-├── src/main/resources/
-│   └── db.properties.example         # Template for database configuration
-│
-├── .gitignore
-├── pom.xml
-└── README.md
+## 📌 Overview
+
+A console-based **Student Management System** developed using **Java, JDBC, and PostgreSQL** to manage students, courses, and enrollments efficiently.
+This project demonstrates backend database integration, DAO architecture, connection pooling, and PostgreSQL stored procedures/functions.
 
 ---
+
+## 🚀 Features
+
+### Admin Module
+
+* Add New Student
+* View All Students
+* Update Student Details
+* Delete Student
+* Add New Course
+* View All Courses
+* Enroll Student in Course
+* Assign / Update Grades
+
+### Additional Enhancements
+
+* Custom JDBC Connection Pool
+* Stored Procedure Integration
+* PostgreSQL Function Example
+* Input Validation & Error Handling
+
+---
+
+## 🛠 Tech Stack
+
+* **Language:** Java
+* **Database:** PostgreSQL
+* **Connectivity:** JDBC
+* **Build Tool:** Maven
+* **IDE:** Eclipse
+
+---
+
+## 🧠 Concepts Implemented
+
+* DAO Design Pattern
+* JDBC CRUD Operations
+* Custom Connection Pooling
+* Stored Procedures
+* Database Functions
+* Exception Handling
+* Layered Architecture
+
+---
+
+## 🗃 Database Schema
+
+### Students Table
+
+* `id` (Primary Key)
+* `name`
+* `email` (Unique)
+* `dob`
+
+### Courses Table
+
+* `id` (Primary Key)
+* `course_name`
+* `credits`
+
+### Enrollments Table
+
+* `id` (Primary Key)
+* `student_id` (Foreign Key)
+* `course_id` (Foreign Key)
+* `grade`
+
+---
+
+## 📂 Project Structure
+
+```bash
+src/main/java
+└── com.scms
+    ├── db
+    │   ├── DBConnection.java
+    │   └── CreateConnection.java
+    ├── dao
+    │   ├── StudentDAO.java
+    │   ├── CourseDAO.java
+    │   └── EnrollmentDAO.java
+    ├── model
+    │   ├── Student.java
+    │   ├── Course.java
+    │   └── Enrollment.java
+    ├── main
+    │   └── MainApp.java
+    └── test
+        ├── TestStudentDAO.java
+        ├── TestCourseDAO.java
+        └── TestEnrollmentDAO.java
+```
+
+---
+
+## ▶️ How to Run
+
+### 1. Clone Repository
+
+```bash
+git clone https://github.com/YOUR_USERNAME/student-management-system.git
+```
+
+### 2. Create PostgreSQL Database
+
+```sql
+CREATE DATABASE scms_db;
+```
+
+### 3. Run Database Schema Script
+
+Execute table creation queries and stored procedures/functions in PostgreSQL.
+
+### 4. Configure Database Credentials
+
+Update DB credentials in:
+
+```java
+CreateConnection.java
+```
+
+### 5. Run Application
+
+Execute:
+
+```java
+MainApp.java
+```
+
+---
+
+## 📈 Future Enhancements
+
+* GUI using JavaFX / Swing
+* Spring Boot REST API Version
+* JWT Authentication
+* Role-Based Access Control
+* Web Frontend Integration
+
+---
+
+## 👩‍💻 Author
+
+**Sushmitha Y**
+Engineering Student | Full Stack Developer
+
+---
+
+## ⭐ If You Like This Project
+
+Feel free to star the repository!
+
 
 ## ▶️ How to Run
 
@@ -141,6 +271,7 @@ MainApp.java
 *Sushmitha Y*
 
 GitHub: @SUSHMITHA0502-create
+
 Email: sushmithayadukul05@gmail.com
 
 ---
