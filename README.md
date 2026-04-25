@@ -100,7 +100,7 @@ src/main/java
 ### 1. Clone Repository
 
 ```bash
-git clone https://github.com/SUSHMITHA0502/student-management-system.git
+git clone https://github.com/SUSHMITHA0502/student-management-system
 ```
 
 ### 2. Create PostgreSQL Database
@@ -134,8 +134,8 @@ MainApp.java
 **Sushmitha Y**
 
 GitHub: @SUSHMITHA0502-create
+Email: sushmithayadukul05@gmail.com
 
- Email: sushmithayadukul05@gmail.com
 ---
 
 ## ⭐ If You Like This Project
