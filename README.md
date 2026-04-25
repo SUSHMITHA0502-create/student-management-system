@@ -107,7 +107,7 @@ student-management-system/
 ### 1. Clone Repository
 
 ```bash
-git clone https://github.com/YOUR_USERNAME/student-management-system
+git clone https://github.com/SUSHMITHA0502/student-management-system
 ```
 
 ### 2. Create PostgreSQL Database
@@ -138,7 +138,7 @@ MainApp.java
 
 ## 👩‍💻 Author
 
-**Sushmitha Y*
+*Sushmitha Y*
 
 GitHub: @SUSHMITHA0502-create
 Email: sushmithayadukul05@gmail.com
